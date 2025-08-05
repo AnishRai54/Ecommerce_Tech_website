@@ -114,13 +114,19 @@ transition: transform 0.4s ease;
     width: 200px;
     border-radius: 45px;
     margin: 23px;
+    transition: transform 0.3s ease-in-out;
 }
+.explore:hover{
+    transform: scale(1.1);
+}
+
 .Mobile {
     
   display: flex;
   align-items: center;
   margin-top: 25vh;
 }
+
 
 .mobile {
   max-width: 400px;
@@ -129,6 +135,12 @@ transition: transform 0.4s ease;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 1.4);
   border: 5px gainsboro;
   border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+.mobile:hover{
+    transform: scale(1.1);
 }
 
 .Mobile_content {
@@ -138,21 +150,39 @@ transition: transform 0.4s ease;
   width: 55vw;
   background-color: lightgray;
   border-radius: 10px;
+  
+}
+.Mobile_content {
+    transition: transform 0.3s ease-in-out;
 }
 
+.Mobile_content:hover {
+    transform: scale(1.05);
+    /* or any effect you want */
+}
+
+ .mobile{
+    transition: transform 0.3s ease-in-out;
+}
+.mobile:hover{
+    transform: scale(1.1);
+}
 .Mobile_heading {
     font-size: 2.5em;
     font-weight: 700;
     margin-bottom: 14px;
+    margin-left: 30px;
 }
 
-.Mobile_content p {
+
+.Mobile_content {
   margin: 0;
   font-size: 1.3em;
   line-height: 1.5;
+  margin-left: 30px;
 }
 .Mobile_content p{
-    margin-top: 30px;
+    text-align: center;
 }
 .mobile_button{
     background-color: black;
@@ -186,14 +216,31 @@ transition: transform 0.4s ease;
   margin: 25px;
 }
 
-.Laptop_content {
+.Laptop_content  {
   display: flex;
   flex-direction: column;
   height: 350px;
   width: 55vw;
   background-color: lightgray;
   border-radius: 10px;
+  margin: 30px;
 }
+.Laptop_content {
+    transition: transform 0.3s ease-in-out;
+}
+
+.Laptop_content:hover {
+    transform: scale(1.05);
+    /* or any effect you want */
+}
+
+ .laptop{
+    transition: transform 0.3s ease-in-out;
+}
+.laptop:hover{
+    transform: scale(1.1);
+}
+
 
 .Laptop_heading {
     font-size: 2.5em;
@@ -206,9 +253,15 @@ transition: transform 0.4s ease;
   font-size: 1.3em;
   line-height: 1.5;
 }
-.Laptop_content p{
+.Laptop_heading {
     margin-top: 30px;
+    margin-left: 30px;
+    text-align: center;
 }
+.Laptop_content p{
+    text-align: center;
+}
+
 .Laptop_button{
     background-color: black;
     height: 60px;
@@ -222,6 +275,12 @@ transition: transform 0.4s ease;
     top: 50px;
     left:20vw;
     
+}
+ .laptop .Laptop_content{
+    transition: transform 0.3s ease-in-out;
+}
+ .laptop .Laptop_content:hover{
+    transform: scale(1.1);
 }
 /* TiclHub electronic template for reference*/
 .Watch{
@@ -248,12 +307,29 @@ transition: transform 0.4s ease;
   width: 55vw;
   background-color: lightgray;
   border-radius: 10px;
+  margin-left: 30px;
+}
+.Watch_content {
+    transition: transform 0.3s ease-in-out;
+}
+
+.Watch_content:hover {
+    transform: scale(1.05);
+    /* or any effect you want */
+}
+
+ .watch{
+    transition: transform 0.3s ease-in-out;
+}
+.watch:hover{
+    transform: scale(1.1);
 }
 
 .Watch_heading {
     font-size: 2.5em;
     font-weight: 700;
     margin-bottom: 14px;
+    text-align: center;
 }
 
 .Watch_content p {
@@ -262,7 +338,7 @@ transition: transform 0.4s ease;
   line-height: 1.5;
 }
 .Watch_content p{
-    margin-top: 30px;
+    text-align: center;
 }
 .Watch_button{
     background-color: black;
@@ -278,6 +354,7 @@ transition: transform 0.4s ease;
     left:20vw;
     
 }
+
 
 .features-section {
     text-align: center;
@@ -464,4 +541,6 @@ transition: transform 0.4s ease;
     transition: transform 0.4s ease, opacity 0.3s ease;
   }
 }
+
+
 
