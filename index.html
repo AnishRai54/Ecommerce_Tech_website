@@ -2,106 +2,520 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Innovixus</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Innovixus is a modern tech shopping storefront that helps users discover gadgets, compare highlights, and jump to the original store page to buy.">
+  <title>Innovixus | Real Tech Store Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
-  <header>
-    <nav>
-      <img class="logo" src="https://i.ibb.co/S2nrr9m/image-5.webp" alt="" />
-      <ul>
-        <li>Home</li>
-        <li>Mobile</li>
-        <li>Laptop</li>
-        <li>Electronics</li>
-        <li>About Us</li>
-        <li>Contact</li>
-        
-      </ul>
-      <button class="login" type="submit"> Login</button>
-      
-    </nav>
-    <hr></hr>
-  </header>
-  <main class="text">
-    <div>Explore Top Mobiles & Laptop Picks !</div>
-    <div >At Best Price  </div>
-    <p>Hunting for the perfect smartphone, scouting the best laptop deals, or staying up to date with the latest innovations in consumer electronics, InnoVixus brings everything together in one powerful, user-friendly platform. Discover smart choices with confidence—only at InnoVixus. </p>
-    <ul class="object_images">
-      <li><img class="product" src="https://m.media-amazon.com/images/I/41EQfoH+qFL._SY300_SX300_QL70_FMwebp_.jpg" alt="" /></li>
-      <li><img class="product" src="https://m.media-amazon.com/images/I/61d88xzrklL._SX679_.jpg" alt="" /></li>
-      <li><img class="product"  src="https://m.media-amazon.com/images/I/418mFfRZu-L._SY300_SX300_QL70_FMwebp_.jpg" alt="" /></li>
-      <li><img  class="product" src="https://m.media-amazon.com/images/I/416e1B8V75L._SY300_SX300_QL70_FMwebp_.jpg" alt="" /></li>
-      <li><img class="product"  src="https://rukminim2.flixcart.com/image/832/832/xif0q/headphone/e/k/q/-original-imahech89szuqsph.jpeg?q=70&crop=false" alt="" /></li>
-      <li><img class="product"  src="https://m.media-amazon.com/images/I/31OpleMwRXL._SX342_SY445_QL70_FMwebp_.jpg" alt="" /></li>
-      
-    </ul>
-      
-      <button class="explore" type="submit">Browse<br> Product</button>
-    </main>
-    <div class="Mobile">
-  <img class="mobile" src="https://i.ibb.co/gZWDDMQ8/Screenshot-20250805-214120.webp" alt="" />
-  <div class="Mobile_content">
-    <div class="Mobile_heading">Discover Innovative Smartphones</div>
-    <p>
-      Explore the latest smartphones for unmatched speed, innovation, and style.<br>
-      Perfect for photography, gaming, and staying connected.<br>
-      Find your ideal device and elevate your everyday experience.
-    </p>
-    <button class="mobile_button" type="submit">Shop Now</button>
+  <div class="top-strip">
+    <p>Free shipping inspired experience, secure checkout flow, and direct links to original stores.</p>
+    <div class="top-strip-links">
+      <a href="#deals">Today's Deals</a>
+      <a href="#finder">Search Store</a>
+      <a href="#contact">Support</a>
+    </div>
   </div>
-</div>
-<div class="Laptop">
-<img class="laptop" src="https://i.postimg.cc/66b9cHSR/image-10-1.png" alt="" />
-<div class="Laptop_content">
-  <div class="Laptop_heading">Shop the Best Laptops: Performance Meets Style></div>
-  <p>
-    Find the perfect laptop that fits your lifestyle and budget. <br >Our collection features the latest models with good performance 
-  </p>
-  <button class="Laptop_button" type="submit">Shop Now</button>
-</div>
-</div>
 
-<div class="Watch">
-  <img class="watch" src="https://i.ibb.co/7Nydx5Jz/Screenshot-20250805-214110.webp" alt="" />
-  <div class="Watch_content">
-    <div class="Watch_heading">Luxury & Everyday Watches and Headphones at Great Prices</div>
-    <p>
-      Explore our collection of watches and Headphone that blend style and functionality. <br >Choose from classic to contemporary designs crafted for every occasion
-    </p>
-    <button class="Watch_button" type="submit">Shop Now</button>
-  </div>
-</div>
-<section class="features-section">
-  <h2 class="features-title">Our Features</h2>
-  <p class="features-desc">
-    Welcome To Our Digital Emporium, Where Style Meets Innovation In The Realm Of Watches, Gadgets, And Cutting-Edge Technology. Discover A Curated Collection That Transcends Time.
-  </p>
-  <div class="features-list">
-    <div class="feature">
-      <span class="feature-icon">🚚</span>
-      <h3>Free Shipping</h3>
-      <p>Elevate Your Casual Style With Our Men's Hoodie</p>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="#top" aria-label="Innovixus home">
+        <img class="logo" src="https://i.ibb.co/S2nrr9m/image-5.webp" alt="Innovixus logo">
+        <span>Innovixus</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-panel" id="site-menu">
+        <ul class="nav-links">
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#dna">DNA</a></li>
+          <li><a href="#deals">Deals</a></li>
+          <li><a href="#finder">Search</a></li>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-utilities">
+          <button class="nav-icon" type="button" id="wishlist-button" aria-label="Wishlist">
+            Wishlist
+            <span class="counter" id="wishlist-count">0</span>
+          </button>
+          <button class="nav-icon" type="button" id="cart-button" aria-label="Cart" aria-expanded="false">
+            Cart
+            <span class="counter" id="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Next-gen shopping interface</p>
+        <h1>Shop premium tech with a real ecommerce feel and direct store checkout links.</h1>
+        <p class="hero-text">
+          Browse curated devices, add items to a sample cart, save favorites, filter categories, and then continue to Amazon, Flipkart, or the original brand store when you are ready to buy.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button-primary" href="#shop">Shop Now</a>
+          <a class="button-secondary" href="#deals">View Deals</a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <strong>24/7</strong>
+            <span>Always-on product discovery</span>
+          </div>
+          <div>
+            <strong>3</strong>
+            <span>Store destinations</span>
+          </div>
+          <div>
+            <strong>Real UI</strong>
+            <span>Cart, wishlist, and offers</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-showcase">
+        <article class="hero-promo">
+          <span class="tag">Flash Sale</span>
+          <h2>Weekend tech drop</h2>
+          <p>Shop phones, headphones, and laptops with limited-time highlighted deals.</p>
+          <div class="promo-price">
+            <strong>Up to 35% off</strong>
+            <span>on trending gadgets</span>
+          </div>
+        </article>
+
+        <div class="hero-visual-grid">
+          <article class="hero-card hero-card-main">
+            <img src="https://m.media-amazon.com/images/I/61d88xzrklL._SX679_.jpg" alt="Premium smartphone">
+            <div>
+              <h2>Premium mobile deals</h2>
+              <p>Curated flagship phones with direct buy paths.</p>
+            </div>
+          </article>
+          <article class="hero-card hero-card-side">
+            <img src="https://i.postimg.cc/66b9cHSR/image-10-1.png" alt="Laptop showcase">
+            <p>Powerful laptops for work, study, and gaming setups.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-bar reveal">
+      <article>
+        <strong>Fast discovery</strong>
+        <span>Search products in seconds</span>
+      </article>
+      <article>
+        <strong>Wishlist ready</strong>
+        <span>Save your top picks instantly</span>
+      </article>
+      <article>
+        <strong>Store redirect</strong>
+        <span>Jump to original seller pages</span>
+      </article>
+      <article>
+        <strong>Responsive design</strong>
+        <span>Optimized for Chrome and mobile</span>
+      </article>
+    </section>
+
+    <section class="dna-lab reveal" id="dna">
+      <div class="section-heading">
+        <p class="eyebrow">Shopping DNA</p>
+        <h2>Make the storefront feel personal, not generic</h2>
+        <p>Select a buyer mode and Innovixus will shift its recommendation tone, quick search prompt, and featured setup idea.</p>
+      </div>
+
+      <div class="dna-layout">
+        <article class="dna-panel">
+          <div class="persona-switcher" aria-label="Shopping personas">
+            <button class="persona-chip is-active" type="button" data-persona="creator">Creator</button>
+            <button class="persona-chip" type="button" data-persona="gamer">Gamer</button>
+            <button class="persona-chip" type="button" data-persona="minimal">Minimalist</button>
+          </div>
+
+          <div class="persona-copy">
+            <p class="eyebrow" id="persona-label">Creator mode</p>
+            <h3 id="persona-title">Build a kit for editing, content, and clean productivity.</h3>
+            <p id="persona-text">Balanced picks with stronger displays, polished design, and dependable performance for people who create every day.</p>
+          </div>
+
+          <div class="persona-metrics">
+            <div>
+              <span>Best for</span>
+              <strong id="persona-metric-one">Video, design, multitasking</strong>
+            </div>
+            <div>
+              <span>Suggested search</span>
+              <strong id="persona-metric-two">creator laptop</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="setup-card">
+          <span class="tag">Signature Setup</span>
+          <h3 id="setup-title">Creator Desk Loadout</h3>
+          <p id="setup-text">Premium phone, strong laptop, and reliable audio gear that feel coordinated and professional.</p>
+          <div class="setup-stack" id="setup-stack">
+            <span>Flagship phone</span>
+            <span>Creator laptop</span>
+            <span>Wireless audio</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="finder reveal" id="finder">
+      <div class="section-heading">
+        <p class="eyebrow">Search any product</p>
+        <h2>Type any item and open the original marketplace results</h2>
+        <p>Use this search like a real store utility bar. Pick a destination and continue shopping on Amazon, Flipkart, or the official brand store search.</p>
+      </div>
+
+      <form class="finder-form" id="finder-form">
+        <label class="finder-field" for="finder-input">
+          <span>Product name</span>
+          <input id="finder-input" type="search" placeholder="Example: iPhone 15, gaming laptop, noise watch" required>
+        </label>
+
+        <label class="finder-field" for="store-select">
+          <span>Choose store</span>
+          <select id="store-select">
+            <option value="amazon">Amazon</option>
+            <option value="flipkart">Flipkart</option>
+            <option value="google">Original Store Search</option>
+          </select>
+        </label>
+
+        <button class="button-primary finder-button" type="submit">Search Store</button>
+      </form>
+
+      <div class="finder-actions">
+        <button class="quick-store is-active" type="button" data-store="amazon">Amazon</button>
+        <button class="quick-store" type="button" data-store="flipkart">Flipkart</button>
+        <button class="quick-store" type="button" data-store="google">Original Store Search</button>
+      </div>
+
+      <p class="finder-result" id="finder-result">Enter a product name to generate a direct marketplace search link.</p>
+    </section>
+
+    <section class="signal-grid reveal">
+      <article class="signal-card signal-card-dark">
+        <p class="eyebrow">Why it stands out</p>
+        <h3>It behaves like a storefront and speaks like a tech magazine.</h3>
+        <p>Instead of a flat product grid, this layout mixes shopping tools, editorial storytelling, and personalized recommendation cues.</p>
+      </article>
+      <article class="signal-card">
+        <p class="eyebrow">Quick Compare</p>
+        <h3>Pick by lifestyle, not just by category.</h3>
+        <ul class="signal-list">
+          <li>Creators need display quality and battery consistency.</li>
+          <li>Gamers prioritize power, cooling, and refresh rate.</li>
+          <li>Minimal users want portability and simple daily value.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="deals reveal" id="deals">
+      <div class="section-heading">
+        <p class="eyebrow">Today's deals</p>
+        <h2>Offer banners that make the store feel alive</h2>
+      </div>
+
+      <div class="deal-grid">
+        <article class="deal-card">
+          <span class="deal-label">Mobile Deal</span>
+          <h3>Save on flagship phones</h3>
+          <p>High-performance mobile picks with premium build and camera-focused features.</p>
+        </article>
+        <article class="deal-card">
+          <span class="deal-label">Laptop Deal</span>
+          <h3>Upgrade your work setup</h3>
+          <p>Thin, powerful laptops made for creators, coders, and students.</p>
+        </article>
+        <article class="deal-card">
+          <span class="deal-label">Audio Deal</span>
+          <h3>Hear every detail</h3>
+          <p>Headphones and wearables with strong battery life and modern design.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="shop-layout" id="shop">
+      <div class="shop-main">
+        <div class="section-heading">
+          <p class="eyebrow">Storefront</p>
+          <h2>Shop technology categories</h2>
+          <p>Filter products, compare offer tags, save favorites, and add items to a sample cart before jumping to the real buying page.</p>
+        </div>
+
+        <div class="toolbar">
+          <div class="filter-group" aria-label="Product filters">
+            <button class="filter-chip is-active" type="button" data-filter="all">All</button>
+            <button class="filter-chip" type="button" data-filter="mobile">Mobiles</button>
+            <button class="filter-chip" type="button" data-filter="laptop">Laptops</button>
+            <button class="filter-chip" type="button" data-filter="accessory">Accessories</button>
+          </div>
+
+          <label class="search-box" for="product-search">
+            <span>Search</span>
+            <input id="product-search" type="search" placeholder="Search the storefront">
+          </label>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card reveal" data-category="mobile" data-name="samsung galaxy smartphone amazon" data-title="Samsung Galaxy Smartphone" data-price="62999">
+            <button class="wishlist-toggle" type="button" aria-label="Add Samsung Galaxy Smartphone to wishlist">Save</button>
+            <span class="product-badge">Mobile</span>
+            <span class="offer-badge">18% Off</span>
+            <img class="product-image" src="https://m.media-amazon.com/images/I/41EQfoH+qFL._SY300_SX300_QL70_FMwebp_.jpg" alt="Samsung Galaxy smartphone">
+            <div class="product-meta">
+              <span class="rating">4.6 rating</span>
+              <span class="delivery">Fast delivery</span>
+            </div>
+            <h3>Samsung Galaxy Smartphone</h3>
+            <p>Flagship-style performance, sharp display, and polished everyday software experience.</p>
+            <div class="price-row">
+              <strong>Rs 62,999</strong>
+              <span>Rs 76,999</span>
+            </div>
+            <div class="product-actions">
+              <button class="ghost-action add-to-cart" type="button" data-title="Samsung Galaxy Smartphone" data-price="62999">Add to Cart</button>
+              <a class="product-link" href="https://www.amazon.in/s?k=samsung+galaxy+smartphone" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="mobile" data-name="premium smartphone amazon iphone flagship" data-title="Premium Smartphone Pick" data-price="79999">
+            <button class="wishlist-toggle" type="button" aria-label="Add Premium Smartphone Pick to wishlist">Save</button>
+            <span class="product-badge">Mobile</span>
+            <span class="offer-badge">New</span>
+            <img class="product-image" src="https://m.media-amazon.com/images/I/61d88xzrklL._SX679_.jpg" alt="Premium smartphone">
+            <div class="product-meta">
+              <span class="rating">4.8 rating</span>
+              <span class="delivery">Top seller</span>
+            </div>
+            <h3>Premium Smartphone Pick</h3>
+            <p>High-end design for creators, gamers, and users who want a luxury mobile feel.</p>
+            <div class="price-row">
+              <strong>Rs 79,999</strong>
+              <span>Rs 89,999</span>
+            </div>
+            <div class="product-actions">
+              <button class="ghost-action add-to-cart" type="button" data-title="Premium Smartphone Pick" data-price="79999">Add to Cart</button>
+              <a class="product-link" href="https://www.amazon.in/s?k=premium+smartphone" target="_blank" rel="noopener noreferrer">View Store Page</a>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="mobile" data-name="compact smartphone amazon camera phone" data-title="Compact Smartphone" data-price="45999">
+            <button class="wishlist-toggle" type="button" aria-label="Add Compact Smartphone to wishlist">Save</button>
+            <span class="product-badge">Mobile</span>
+            <span class="offer-badge">Hot</span>
+            <img class="product-image" src="https://m.media-amazon.com/images/I/418mFfRZu-L._SY300_SX300_QL70_FMwebp_.jpg" alt="Compact smartphone">
+            <div class="product-meta">
+              <span class="rating">4.5 rating</span>
+              <span class="delivery">Ready to ship</span>
+            </div>
+            <h3>Compact Smartphone</h3>
+            <p>Easy-to-hold design, strong camera output, and responsive performance for daily use.</p>
+            <div class="price-row">
+              <strong>Rs 45,999</strong>
+              <span>Rs 52,999</span>
+            </div>
+            <div class="product-actions">
+              <button class="ghost-action add-to-cart" type="button" data-title="Compact Smartphone" data-price="45999">Add to Cart</button>
+              <a class="product-link" href="https://www.amazon.in/s?k=compact+smartphone" target="_blank" rel="noopener noreferrer">Open Amazon</a>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="laptop" data-name="performance laptop amazon work gaming" data-title="Performance Laptop" data-price="89999">
+            <button class="wishlist-toggle" type="button" aria-label="Add Performance Laptop to wishlist">Save</button>
+            <span class="product-badge">Laptop</span>
+            <span class="offer-badge">Best Value</span>
+            <img class="product-image" src="https://m.media-amazon.com/images/I/416e1B8V75L._SY300_SX300_QL70_FMwebp_.jpg" alt="Laptop computer">
+            <div class="product-meta">
+              <span class="rating">4.7 rating</span>
+              <span class="delivery">Office + gaming</span>
+            </div>
+            <h3>Performance Laptop</h3>
+            <p>Balanced productivity machine with enough power for design tools and multiplayer gaming.</p>
+            <div class="price-row">
+              <strong>Rs 89,999</strong>
+              <span>Rs 1,04,999</span>
+            </div>
+            <div class="product-actions">
+              <button class="ghost-action add-to-cart" type="button" data-title="Performance Laptop" data-price="89999">Add to Cart</button>
+              <a class="product-link" href="https://www.amazon.in/s?k=performance+laptop" target="_blank" rel="noopener noreferrer">Buy Laptop</a>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="accessory" data-name="wireless headphones flipkart audio" data-title="Wireless Headphones" data-price="6999">
+            <button class="wishlist-toggle" type="button" aria-label="Add Wireless Headphones to wishlist">Save</button>
+            <span class="product-badge">Accessory</span>
+            <span class="offer-badge">Audio</span>
+            <img class="product-image" src="https://rukminim2.flixcart.com/image/832/832/xif0q/headphone/e/k/q/-original-imahech89szuqsph.jpeg?q=70&crop=false" alt="Wireless headphones">
+            <div class="product-meta">
+              <span class="rating">4.4 rating</span>
+              <span class="delivery">Flipkart deal</span>
+            </div>
+            <h3>Wireless Headphones</h3>
+            <p>Comfortable over-ear design with modern style and immersive sound signature.</p>
+            <div class="price-row">
+              <strong>Rs 6,999</strong>
+              <span>Rs 9,999</span>
+            </div>
+            <div class="product-actions">
+              <button class="ghost-action add-to-cart" type="button" data-title="Wireless Headphones" data-price="6999">Add to Cart</button>
+              <a class="product-link" href="https://www.flipkart.com/search?q=wireless+headphones" target="_blank" rel="noopener noreferrer">Shop on Flipkart</a>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="accessory" data-name="smart watch amazon wearable" data-title="Smart Watch" data-price="5999">
+            <button class="wishlist-toggle" type="button" aria-label="Add Smart Watch to wishlist">Save</button>
+            <span class="product-badge">Accessory</span>
+            <span class="offer-badge">Trending</span>
+            <img class="product-image" src="https://m.media-amazon.com/images/I/31OpleMwRXL._SX342_SY445_QL70_FMwebp_.jpg" alt="Smart watch">
+            <div class="product-meta">
+              <span class="rating">4.3 rating</span>
+              <span class="delivery">Fitness pick</span>
+            </div>
+            <h3>Smart Watch</h3>
+            <p>Track routines, notifications, and wellness with a clean wearable interface.</p>
+            <div class="price-row">
+              <strong>Rs 5,999</strong>
+              <span>Rs 8,499</span>
+            </div>
+            <div class="product-actions">
+              <button class="ghost-action add-to-cart" type="button" data-title="Smart Watch" data-price="5999">Add to Cart</button>
+              <a class="product-link" href="https://www.amazon.in/s?k=smart+watch" target="_blank" rel="noopener noreferrer">Buy Smart Watch</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="empty-state" hidden>No products match this filter right now. Try another keyword or category.</p>
+      </div>
+
+      <aside class="cart-panel reveal" id="cart-panel">
+        <div class="cart-header">
+          <div>
+            <p class="eyebrow">Sample cart</p>
+            <h2>Your picks</h2>
+          </div>
+          <button class="cart-close" type="button" id="cart-close" aria-label="Close cart">Close</button>
+        </div>
+
+        <div class="cart-body">
+          <div class="cart-summary">
+            <div>
+              <span>Items</span>
+              <strong id="cart-items-total">0</strong>
+            </div>
+            <div>
+              <span>Wishlist</span>
+              <strong id="wishlist-total">0</strong>
+            </div>
+          </div>
+
+          <div class="cart-list" id="cart-list">
+            <p class="cart-empty">Your cart is empty. Add a product to preview a real store-style shopping experience.</p>
+          </div>
+
+          <div class="cart-footer">
+            <div class="subtotal-row">
+              <span>Estimated subtotal</span>
+              <strong id="cart-subtotal">Rs 0</strong>
+            </div>
+            <p class="cart-note">Checkout buttons on product cards take users to the original seller page to complete purchase.</p>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="collections" id="collections">
+      <article class="collection-card reveal">
+        <img class="collection-image" src="https://i.ibb.co/gZWDDMQ8/Screenshot-20250805-214120.webp" alt="Smartphone collection">
+        <div class="collection-copy">
+          <p class="eyebrow">Mobile collection</p>
+          <h2>Discover innovative smartphones</h2>
+          <p>Explore premium phones for photography, gaming, content creation, and fast everyday communication.</p>
+          <a class="button-inline" href="https://www.amazon.in/s?k=latest+smartphones" target="_blank" rel="noopener noreferrer">Shop mobile deals</a>
+        </div>
+      </article>
+
+      <article class="collection-card collection-card-reverse reveal">
+        <img class="collection-image" src="https://i.postimg.cc/66b9cHSR/image-10-1.png" alt="Laptop collection">
+        <div class="collection-copy">
+          <p class="eyebrow">Laptop collection</p>
+          <h2>Performance meets style</h2>
+          <p>Compare lightweight laptops and powerful creator machines with a cleaner shopping flow.</p>
+          <a class="button-inline" href="https://www.amazon.in/s?k=best+laptops" target="_blank" rel="noopener noreferrer">Explore laptops</a>
+        </div>
+      </article>
+
+      <article class="collection-card reveal">
+        <img class="collection-image" src="https://i.ibb.co/7Nydx5Jz/Screenshot-20250805-214110.webp" alt="Accessories collection">
+        <div class="collection-copy">
+          <p class="eyebrow">Accessories</p>
+          <h2>Wearables and audio for your setup</h2>
+          <p>Headphones and smart wearables that complete the experience and link straight to the original marketplaces.</p>
+          <a class="button-inline" href="https://www.flipkart.com/search?q=smart+watches+headphones" target="_blank" rel="noopener noreferrer">Shop accessories</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="features-section" id="features">
+      <div class="section-heading">
+        <p class="eyebrow">Why this feels more real</p>
+        <h2>Store patterns users already understand</h2>
+      </div>
+
+      <div class="features-list">
+        <article class="feature reveal">
+          <span class="feature-icon">01</span>
+          <h3>Cart and wishlist interactions</h3>
+          <p>Users can add items, see counts update, and preview a shopping flow before leaving the site.</p>
+        </article>
+        <article class="feature reveal">
+          <span class="feature-icon">02</span>
+          <h3>Store search utility</h3>
+          <p>The search form lets shoppers type any product and open the related marketplace instantly.</p>
+        </article>
+        <article class="feature reveal">
+          <span class="feature-icon">03</span>
+          <h3>Offer-driven product cards</h3>
+          <p>Discount badges, ratings, prices, and delivery cues make the browsing experience feel authentic.</p>
+        </article>
+        <article class="feature reveal">
+          <span class="feature-icon">04</span>
+          <h3>Responsive storefront layout</h3>
+          <p>The page adapts across phone, tablet, and desktop layouts for Chrome-friendly publishing.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div>
+      <h2>Innovixus</h2>
+      <p>Built as a realistic storefront experience that helps users discover products, then continue to original sellers to buy.</p>
     </div>
-    <div class="feature">
-      <span class="feature-icon">💳</span>
-      <h3>Secure Payments</h3>
-      <p>Elevate Your Casual Style With Our Men's Hoodie</p>
-    </div>
-    <div class="feature">
-      <span class="feature-icon">📦</span>
-      <h3>30 Days Free Return</h3>
-      <p>Elevate Your Casual Style With Our Men's Hoodie</p>
-    </div>
-    <div class="feature">
-      <span class="feature-icon">💎</span>
-      <h3>Curated Collections</h3>
-      <p>Elevate Your Casual Style With Our Men's Hoodie</p>
-    </div>
-  </div>
-</section>
+    <a class="button-primary" href="#shop">Start Shopping</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
